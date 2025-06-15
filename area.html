@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>AREA</title>
+</head>
+<body>
+   <script>
+    function calculateRectangleArea(length, width) {
+  return length * width;
+}
+
+function calculateSquareArea(side) {
+  return side * side;
+}
+
+function calculateCircleArea(radius) {
+  return Math.PI * radius * radius;
+}
+
+function main() {
+  const choice = prompt(
+    "Choose a shape to calculate the area:\n1. Rectangle\n2. Square\n3. Circle"
+  );
+
+  switch (choice) {
+    case "1":
+      const length = parseFloat(prompt("Enter the length of the rectangle:"));
+      const width = parseFloat(prompt("Enter the width of the rectangle:"));
+      alert("Area of the rectangle is: " + calculateRectangleArea(length, width).toFixed(2));
+      break;
+
+    case "2":
+      const side = parseFloat(prompt("Enter the side of the square:"));
+      alert("Area of the square is: " + calculateSquareArea(side).toFixed(2));
+      break;
+
+    case "3":
+      const radius = parseFloat(prompt("Enter the radius of the circle:"));
+      alert("Area of the circle is: " + calculateCircleArea(radius).toFixed(2));
+      break;
+
+    default:
+      alert("Invalid choice. Please enter 1, 2, or 3.");
+  }
+}
+
+main();
+   </script> 
+</body>
+</html>

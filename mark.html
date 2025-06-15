@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Mark with Percentage and Grade</title>
+</head>
+<body>
+    <script>
+        m1=parseInt(prompt("Enter first mark"));
+        m2=parseInt(prompt("Enter second mark"));
+        m3=parseInt(prompt("Enter third mark"));
+        m4=parseInt(prompt("Enter fourth mark"));
+        perc=(m1+m2+m3+m4)/400*100;
+        if(perc>=90){
+            document.write("Grade A");
+        }
+        else if(perc>=80){
+            document.write("Grade B");
+        }
+        else if(perc>=70){
+            document.write("Grade C");
+        }
+        else{
+            document.write("Failed");
+        }
+
+    </script>
+</body>
+</html>

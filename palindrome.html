@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Palindrome</title>
+</head>
+<body>
+    <script>
+        n=parseInt(prompt("enter a number"));
+        function rev(c){
+            a=c.toString();
+            reversed=" ";
+            for(let i= a.length-1;i>=0;i--){
+                reversed+=a[i];
+            }
+            return reversed;
+        }
+        x=rev(n);
+        if(x==n){
+            document.write("Number is palindrome");
+            }
+            else{
+                document.write("Number is not palindrome");
+            }
+    </script>
+</body>
+</html>

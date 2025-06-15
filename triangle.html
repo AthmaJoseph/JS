@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Triangle</title>
+</head>
+<body>
+   <script>
+    x=parseInt(prompt("Enter first side"));
+    y=parseInt(prompt("Enter second side"));
+    z=parseInt(prompt("Enter third side"));
+    if(x==y && y==z){
+        document.write("Equailateral Triangle");
+    }
+    else if(x==y || y==z || z==x){
+        document.write("Isoceles Triangle");
+    }
+    else{
+        document.write("Scalne Triangle");
+    }
+   </script> 
+</body>
+</html>

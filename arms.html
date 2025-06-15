@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+   <script>
+    function Armstrong() {
+        var r,sum=0,n,copy;
+        n = parseInt(prompt("enter a number:"));
+	    copy=n;
+        while (copy>0) {
+           r=copy%10;
+   	       sum=sum+(r*r*r);
+   	       copy=parseInt(copy/10);
+        }
+	if(n==sum)
+	{
+       document.write(n+" is a Armstrong number");
+	}
+	else
+	{
+	   document.write(n+" is not Armstrong a number");
+	}
+   }
+    </script>
+    <form>
+     <h1>ARMSTRONG NUMBER</h1> 
+      <input type="button" value="Click For Check" onclick="Armstrong();" />
+    </form>
+  </body>
+</html>            

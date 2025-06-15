@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>even</title>
+</head>
+<body>
+    <script>
+        for(i=200;i<=400;i++){
+            let a=i.toString();
+            if(a.split('').every(digit=>parseInt(digit)%2===0)){
+                document.write(i,"<br>")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Using ID</title>
+</head>
+<body>
+    <p id="p1">para content</p>
+    <img src="Penguins.jpg" id="img"/>
+    <button onclick="fu1()">click me</button>
+    <script>
+        function fu1(){
+            var e=document.getElementById("p1");
+            e.innerHTML="New content";
+            var e1=document.getElementById("img");
+            e1.src="dora.png";
+            e.style.color="red";
+            e.style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+</html>

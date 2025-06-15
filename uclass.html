@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>using class</title>
+</head>
+<body>
+    <p class="demo">Hello</p>
+    <h1 class="demo">Heading</h1>
+    <button onclick="fun()">Click me</button>
+    <script>
+        function fun(){
+            var e=document.getElementsByClassName("demo");
+            e[0].style.color="yellow";
+            e[1].innerHTML="new value";
+            for(i=0;i<e.length;i++){
+                e[i].style.backgroundColor="green";
+            }
+        }
+    </script>
+</body>
+</html>

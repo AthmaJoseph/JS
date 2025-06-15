@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>hover</title>
+</head>
+<body>
+    <p id="p1" onmouseover="fun1()" onmouseout="fun2()">paragraph</p>
+    <script>
+        function fun1(){
+            var e=document.getElementById("p1");
+            e.style.backgroundColor="red";
+        }
+        function fun2()
+        {
+            var e=document.getElementById("p1");
+            e.style.backgroundColor="blue";
+        }
+        
+    </script>
+</body>
+</html>

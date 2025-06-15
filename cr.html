@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>credinals</title>
+</head>
+<body>
+  <script>
+    const credentials = {
+  admin: { username: "admin", password: "101" },
+  user: { username: "user", password: "102" }
+};
+
+function login() {
+  const inputUsername = prompt("Enter your username:");
+  const inputPassword = prompt("Enter your password:");
+
+  // Check against admin credentials
+  if (
+    inputUsername === credentials.admin.username &&
+    inputPassword === credentials.admin.password
+  ) {
+    alert("Welcome, Admin!");
+  }
+  // Check against user credentials
+  else if (
+    inputUsername === credentials.user.username &&
+    inputPassword === credentials.user.password
+  ) {
+    alert("Welcome, User!");
+  } else {
+    alert("Invalid username or password.");
+  }
+}
+
+login();
+  </script>  
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>login</title>
+</head>
+<body>
+    <script>
+        uname="admin";
+        pwd="1234";
+        u=prompt("Enter user name");
+        p=prompt("Please enter your password");
+        if(uname==u && pwd==p)
+    {
+        document.write("Successfuly Login");
+ 
+    }
+    else if(uname==u)
+    {
+         document.write("Username is correct but wroung password");
+    }
+    else if(pwd==p)
+    {
+         document.write("Password is correct but wroung username");
+    }
+    else{
+        document.write("Invalid user")
+    }
+
+    </script>
+</body>
+</html>
